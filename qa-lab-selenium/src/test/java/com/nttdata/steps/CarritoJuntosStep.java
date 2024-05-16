@@ -45,27 +45,25 @@ public class CarritoJuntosStep {
     }
 
     public void doyClicEnCerrarPopUp() {
-        /*WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(CarritoJuntos.popUp));*/
         tiempo(5000);
         WebElement popUp = driver.findElement(CarritoJuntos.popUp);
         popUp.click();
     }
 
     public void doyClicEnEnvioGratis() {
-        tiempo(6000);
+        tiempo(3000);
         WebElement envioGratis = driver.findElement(CarritoJuntos.envioGratis);
         envioGratis.click();
     }
 
     public void doyClicEnElPrimerProductoQueAparece() {
-        tiempo(5000);
+        tiempo(6000);
         WebElement primerProductoEligeTusOpciones = driver.findElement(CarritoJuntos.primerProductoEligeTusOpciones);
         primerProductoEligeTusOpciones.click();
     }
 
     public void doyClicEnAñadirAlCarrito() {
-        tiempo(3000);
+        tiempo(6000);
         WebElement btnAgregarCarrito = driver.findElement(CarritoJuntos.btnAgregarCarrito);
         btnAgregarCarrito.click();
     }
